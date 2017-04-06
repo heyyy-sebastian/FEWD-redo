@@ -13,3 +13,94 @@
  *= require_tree .
  *= require_self
  */
+body{
+ 	margin: 0;
+ }
+
+nav, footer {
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	padding: 1rem 1.5rem .5rem;
+}
+
+.ga-logo {
+	background-image: url('GAlogo.png');
+}
+
+nav h1 {
+	text-transform: uppercase;
+	font-family: Helvetica, sans-serif;
+	font-size: 2rem;
+	line-height: 100%;
+	margin: .5rem;
+}
+
+nav h2 {
+	font-family: Georgia, serif;
+	font-weight: lighter;
+	font-size: 1.5rem;
+}
+
+.password-box, .add-student-box {
+	margin: 8% auto;
+	height: 250px;
+	width: 300px;
+	font-family: Georgia, serif;
+	border: 2px solid #000;
+	text-indent: 1rem;
+}
+
+input[type=password], input[type=text] {
+	width: 87%;
+	height: 2rem;
+}
+
+.login-btn { 	
+	display: block;
+	width: 89%;
+	margin: 1rem 1rem .03rem;
+  	padding: .8125rem 2rem;
+    border: 0;
+    font-family: Circular,Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #fa4542;
+    box-shadow: 0 3px 0 0 #a20101;
+    text-decoration: none;
+}
+
+.add-student-box {
+	height: 300px;
+	padding: 1rem;
+}
+
+.add-student-box h1, p {
+	text-indent: 0;
+	padding: 0 1rem;
+}
+
+footer{
+	position: fixed;
+	z-index: 999;
+	bottom: -1px;
+	width: 100%;
+	font-family: Georgia, serif;
+	font-size: 1.2rem;
+	letter-spacing: .08rem;
+}
+
+footer a {
+	text-decoration: none;
+	color: #a9a9a9;
+}
+
+footer a:hover, .login-btn:hover {
+	opacity: .7;
+}

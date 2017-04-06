@@ -1,0 +1,9 @@
+<div class="password-box">
+<h1>Hello.</h1>
+<p>Please enter today's password below.</p>
+<%= form_for '/enter' do %>
+	<%= hidden_field_tag(:user_id, value = 1) %>
+   	<%= password_field_tag :password %>
+   	<%= submit_tag("Enter", :class => "login-btn") %>
+<%end%>
+</div>
