@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
     #todays_date = Time.now.to_a[3..5].reverse.to_s.gsub(", ","-0")
     
     #if todays_date == @date
-      @student = student.new(student_params)
+      @student = Student.new(student_params)
 
       if @student.save
         puts "student was saved"
