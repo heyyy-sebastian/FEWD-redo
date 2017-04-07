@@ -105,13 +105,11 @@ input[type=password], input[type=text] {
 	text-align: center;
 }
 
-.todays-attendance, .past-classes {
-	width: 35%;
+.todays-attendance {
+	min-height: 12em;
 	font-family: Georgia, serif;
-	display: inline-block;
 	vertical-align: top;
-	margin: 0 auto;
-	padding: 0 3rem;
+	margin: 4rem 8rem;
 	text-align: left;
 }
 
