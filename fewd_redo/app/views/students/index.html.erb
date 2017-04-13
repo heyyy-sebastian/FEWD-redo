@@ -1,0 +1,14 @@
+<div class="todays-attendance">
+<h1>Who's here?</h1>
+<% if @students.empty? %>
+	<p>No one's here yet.</p>
+	<% else %>
+	<% @students.each do |class_member| %>
+	<ul>
+		<li><%= class_member.name %></li>
+	</ul>
+	<%end%>
+<%end%>
+</div>
+<div class="past-classes">
+</div>

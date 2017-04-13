@@ -4,22 +4,22 @@
 <p>Please type your name in the box below for attendance.</p>
 <%= form_for @student do |f| %>
   <%= f.text_field :name %>
-  <%= submit_tag("Submit", :class => "login-btn") %>
+  <%= submit_tag("Submit", :class => "login-btn", data: { :disable_with => "Thank You!"}) %>
 <%end%>
 </div>
 
 
 <div class="todays-attendance">
 <h1>Who's here?</h1>
-<% if @students.empty? %>
+<%# if @students.empty? %>
 	<p>No one's here yet.</p>
-	<% else %>
-	<% @students.each do |class_member| %>
+	<%# else %>
+	<%# @students.each do |class_member| %>
 	<ul>
-		<li><%= class_member.name %></li>
+		<li><%#= class_member.name %></li>
 	</ul>
-	<%end%>
-<%end%>
+	<%#end%>
+<%#end%>
 </div>
 <div class="past-classes">
 </div>

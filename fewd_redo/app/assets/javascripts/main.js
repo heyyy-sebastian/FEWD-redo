@@ -5,24 +5,22 @@ $(document).ready(function() {
     //	$(this).css('visibility:hidden;')
 	//})
 
-	$('#new_student').submit(function(){
+	// $('#new_student').submit(function(){
 
-		//if (location.reload(true)) {
-		//localStorage.removeItem(storage);
-		//e.preventDefault();
-		$(this).find(':input[type=submit]').prop('disabled', true);
-		$('#new_student').slideUp().hide();
-		//}
-		//select form
-		//on click, hide form
-		//slide up
-	});
+	// 	//if (location.reload(true)) {
+	// 	//localStorage.removeItem(storage);
+	// 	//e.preventDefault();
+	// 	$(this).find(':input[type=submit]').prop('disabled', true);
+	// 	$('#new_student').slideUp().hide();
+	// 	//}
+	// 	//select form
+	// 	//on click, hide form
+	// 	//slide up
+	// });
 
-	if (performance.navigation.type == 1) {
-		console.log('page is reloaded');
-		$(document).ready(function(){
-			$('#new_student').slideUp().hide();
-		});
-	}
+	// if (performance.navigation.type == 1) {
+	// 	console.log('page is reloaded');
+	// 	$('#new_student').hide();
+	// }
 
 }); //End jQuery wrapper function
