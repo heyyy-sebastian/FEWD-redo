@@ -1,4 +1,4 @@
-<%# add in sessions if/else here%>
+<% if logged_in? %>
 <div class="add-student-box">
 <h1>Welcome to FEWD!</h1>
 <p>Please type your name in the box below for attendance.</p>
@@ -7,3 +7,7 @@
   <%= submit_tag("Submit", :class => "login-btn", data: { :disable_with => "Thank You!"}) %>
 <%end%>
 </div>
+
+<%else%>
+<p>hello, you are not logged in.</p>
+<%end%>

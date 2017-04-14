@@ -1,3 +1,4 @@
+<% if logged_in? %>
 <div class="todays-attendance">
 <h1>Who's here?</h1>
 <% if @students.empty? %>
@@ -12,3 +13,6 @@
 </div>
 <div class="past-classes">
 </div>
+<%else%>
+<p>hello, you are not logged in.</p>
+<%end%>
