@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
   #logout
     def destroy
       session[:user_id] = nil
-      redirect_to '/enter'
+      redirect_back(fallback_location: root_path)
     end
 
 end

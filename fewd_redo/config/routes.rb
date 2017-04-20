@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	get '/class-attendance', to: 'students#new'
   get '/class-attendance/students', to: 'students#index'
 
+  #create a new user for each class day
 	get 'users/new'
   post '/users', to: 'users#create'
 

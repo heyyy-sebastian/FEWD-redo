@@ -1,12 +1,12 @@
 <% if logged_in? %>
 
 <div class="add-student-box">
-<h1>Welcome to FEWD!</h1>
-<p>Please type your name in the box below for attendance.</p>
-<%= form_for @student do |f| %>
-  <%= f.text_field :name %>
-  <%= submit_tag("Submit", :class => "btn", data: { :disable_with => "Thank You!"}) %>
-<%end%>
+	<h1>Welcome to FEWD!</h1>
+	<p>Please type your name in the box below for attendance.</p>
+	<%= form_for @student do |f| %>
+  		<%= f.text_field :name %>
+  		<%= submit_tag("Submit", :class => "btn", data: { :disable_with => "Thank You!"}) %>
+	<%end%>
 </div>
 
 <div class="clearfix clear">
@@ -16,5 +16,5 @@
 </div>
 
 <%else%>
-<p>hello, you are not logged in.</p>
+	<p>Hello, thank you for visiting, you are not logged in.</p>
 <%end%>

@@ -19,6 +19,10 @@ body{
  	margin: 0;
  }
 
+ section {
+ 	min-height: 25em;
+ }
+
 /* HEADER AND FOOTER */
 nav, footer {
 	background-color: #000;
@@ -39,7 +43,7 @@ nav h1, .todays-attendance h1, .past-classes h1 {
 	margin: .5rem;
 }
 
-nav h2 {
+nav h2, p {
 	font-family: Georgia, serif;
 	font-weight: lighter;
 	font-size: 1.5rem;
@@ -143,11 +147,6 @@ input[type=password], input[type=text] {
 /* PAST CLASSES */
 .past-classes {
 	
-}
-
-/* REDIRECT MSG if not logged in */
-.login-redirect-msg {
-
 }
 
 /* FOOTER */

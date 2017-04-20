@@ -11,13 +11,17 @@
 			<%end%>
 		<%end%>
 	</div>
+
+<div class="past-classes">
+
+
+</div>
+
 <div class="clearfix clear">
 	<div class="btn logout">
 		<%= link_to "Logout", :controller=> "sessions", :action=> "destroy" %>
 	</div>
 </div>
-	<div class="past-classes">
-	</div>
 <%else%>
-	<p>hello, you are not logged in.</p>
+	<p>Hello, thank you for visiting, you are not logged in.</p>
 <%end%>
