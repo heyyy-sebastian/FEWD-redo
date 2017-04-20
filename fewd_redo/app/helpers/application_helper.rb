@@ -1,5 +1,5 @@
 module ApplicationHelper
-	#helper methods come from this tutorial:
+	#the sessions helper methods below come from this tutorial:
 	#https://www.railstutorial.org/book/basic_login
 
 	#define the current user for a logged in session
@@ -10,12 +10,6 @@ module ApplicationHelper
   	#determine whether the user is logged in or not
   	def logged_in?
     	!current_user.nil?
-  	end
-
-  	#logout
-  	def destroy
-    	session[:user_id] = nil
-    	redirect_to '/enter'
   	end
 
 end

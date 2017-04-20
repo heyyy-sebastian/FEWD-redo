@@ -65,7 +65,7 @@ input[type=password], input[type=text] {
 	margin-left: 1.4em;
 }
 
-.login-btn { 	
+.btn { 	
 	display: block;
 	width: 89%;
 	margin: 1rem 1rem .03rem;
@@ -83,6 +83,33 @@ input[type=password], input[type=text] {
     background-color: #fa4542;
     box-shadow: 0 3px 0 0 #a20101;
     text-decoration: none;
+}
+
+/* LOGOUT BUTTON w CLEARFIX */
+
+/* Clearfix */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.logout {
+	float: right;
+	width: 10%;
+	margin: 1em;
+}
+
+.logout a {
+	text-decoration: none;
+	color: #fff;
 }
 
 /* NAME SUBMISSION BOX FOR ATTENDANCE */
@@ -113,8 +140,6 @@ input[type=password], input[type=text] {
 	text-align: left;
 }
 
-
-
 /* PAST CLASSES */
 .past-classes {
 	
@@ -141,6 +166,6 @@ footer a {
 	color: #a9a9a9;
 }
 
-footer a:hover, .login-btn:hover {
+footer a:hover, .btn:hover {
 	opacity: .7;
 }

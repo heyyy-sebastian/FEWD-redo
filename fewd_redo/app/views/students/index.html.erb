@@ -1,18 +1,23 @@
 <% if logged_in? %>
-<div class="todays-attendance">
-<h1>Who's here?</h1>
-<% if @students.empty? %>
-	<p>No one's here yet.</p>
-	<% else %>
-	<% @students.each do |class_member| %>
-	<ul>
-		<li><%= class_member.name %></li>
-	</ul>
-	<%end%>
-<%end%>
+	<div class="todays-attendance">
+		<h1>Who's here?</h1>
+		<% if @students.empty? %>
+			<p>No one's here yet.</p>
+		<% else %>
+			<% @students.each do |class_member| %>
+			<ul>
+				<li><%= class_member.name %></li>
+			</ul>
+			<%end%>
+		<%end%>
+	</div>
+<div class="clearfix clear">
+	<div class="btn logout">
+		<%= link_to "Logout", :controller=> "sessions", :action=> "destroy" %>
+	</div>
 </div>
-<div class="past-classes">
-</div>
+	<div class="past-classes">
+	</div>
 <%else%>
-<p>hello, you are not logged in.</p>
+	<p>hello, you are not logged in.</p>
 <%end%>
