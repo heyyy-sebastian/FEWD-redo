@@ -14,7 +14,8 @@ class StudentsController < ApplicationController
   def create
 
       @student = Student.new(student_params)
-
+      @student.user_id = session[:user_id]
+      
       if @student.save
       #Need a success flash notice here
         puts "student was saved"

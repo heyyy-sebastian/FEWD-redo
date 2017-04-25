@@ -60,6 +60,10 @@ nav h2, p {
 	text-indent: 1rem;
 }
 
+.password-box{
+	height: 280px;
+}
+
 input[type=password], input[type=text] {
 	width: 87%;
 	height: 2rem;

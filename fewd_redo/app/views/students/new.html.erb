@@ -4,6 +4,7 @@
 	<h1>Welcome to FEWD!</h1>
 	<p>Please type your name in the box below for attendance.</p>
 	<%= form_for @student do |f| %>
+		<%#= hidden_field_tag :user_id, '8' %>
   		<%= f.text_field :name %>
   		<%= submit_tag("Submit", :class => "btn", data: { :disable_with => "Thank You!"}) %>
 	<%end%>
