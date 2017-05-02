@@ -6,16 +6,17 @@ class StudentsController < ApplicationController
 
   #list all students
   def index
-    @students = Student.all
+    todays_session = session[:user_id]
+    @todays_students = Student.where(user_id: todays_session)
   end
-
 
   #add a new student to the Students table
   def create
 
       @student = Student.new(student_params)
+      #set foreign key to match session id
       @student.user_id = session[:user_id]
-      
+
       if @student.save
       #Need a success flash notice here
         puts "student was saved"
@@ -25,7 +26,6 @@ class StudentsController < ApplicationController
       end
 
     redirect_to '/class-attendance/students'
-    # This just reloads the page since the routes are set up weird
   end
 
   private
